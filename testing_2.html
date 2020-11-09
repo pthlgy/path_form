@@ -1,0 +1,157 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+
+  <title>proforma_testing</title>
+  <link rel="stylesheet" href="water.css">
+
+</head>
+
+<body>
+
+<h2 id="form-elements">Colorectal Cancer Histopathology Reporting Guide</h2>
+ <form>
+<label for="labno">Lab No</label>
+<input readonly type="labno" name="labno" id="labno" placeholder="20AH12345">
+
+<label for="about">Microscopic Description</label>
+<textarea name="about" id="about" placeholder="Put your microscopic description here"></textarea>
+
+<label>
+<details>
+<summary>NEOADJUVANT THERAPY</summary>
+<h4>Note 2: </h4>
+<p>Given implications for staging and interpretation of morphological features related to the primary tumour, it is important that clinical information is provided to the pathologist regarding the application of any neoadjuvant therapy, and details of such therapy, for example radiotherapy and/or chemotherapy, duration and timing in relation to surgery.</p>
+<p><img src="TR.png" align=center></p>
+</details>
+</label>
+<div> <input type="radio" id="NAT001" name="NAT" value="Information not provided"> <label for="NAT001">Information not provided</label> </div>
+<div> <input type="radio" id="NAT002" name="NAT" value="Not administered">
+<label for="NAT002">Not administered</label> </div> 
+<div> <input type="radio" id="NAT003" name="NAT" value="Administered, describe"> <label for="NAT003">Administered, <i>describe</i><input name="NATtext" id="NATtext" placeholder=""></label> 
+ </div> 
+
+<label>
+<details>
+<summary>OPERATIVE PROCEDURE</summary>
+<h4>Note 3: </h4>
+<p>Information regarding the nature of the operative procedure should be provided, with any refinements as necessary, for example the attempted dissection plane in an abdominoperineal resection. Should the operative specimen include any tissue or organ not typically submitted within that specimen type, for example en bloc resection of a segment of intestine or abdominal wall connective tissue, this should be clearly indicated. Inclusion of the peritoneal reflection within an anterior resection specimen distinguishes a low anterior resection from a high anterior resection.</p>
+</details>
+</label>
+<div> <input type="radio" id="OP001" name="OP" value="Total colectomy"> <label for="OP001">Total colectomy</label> </div>  
+<div> <input type="radio" id="OP002" name="OP" value="Proctocolectomy"> <label for="OP002">Proctocolectomy</label> </div>   
+<div> <input type="radio" id="OP003" name="OP" value="Right hemicolectomy"> <label for="OP003">Right hemicolectomy</label> </div>  
+<div> <input type="radio" id="OP004" name="OP" value="Extended right hemicolectomy"> <label for="OP004">Extended right hemicolectomy</label> </div>  
+<div> <input type="radio" id="OP005" name="OP" value="Transverse colectomy"> <label for="OP005">Transverse colectomy</label> </div>  
+<div> <input type="radio" id="OP006" name="OP" value="Left hemicolectomy"> <label for="OP006">Left hemicolectomy</label> </div>  
+<div> <input type="radio" id="OP007" name="OP" value="Sigmoid colectomy"> <label for="OP007">Sigmoid colectomy</label> </div>    
+<div> <input type="radio" id="OP008" name="OP" value="Anterior resection"> <label for="OP008">Anterior resection</label> </div>  
+<div> <input type="radio" id="OP009" name="OP" value="Hartmann’s procedure"> <label for="OP009">Hartmann’s procedure</label> </div>  
+<div> <input type="radio" id="OP010" name="OP" value="Abdominoperineal resection"> <label for="OP010">Abdominoperineal resection</label> </div>     
+<div> <input type="radio" id="OP011" name="OP" value="Other, specify"> <label for="OP011">Other, <i>specify</i><input name="OPtext" id="OPtext" placeholder=""></label> </div>   
+
+<label>
+<details>
+<summary>PERFORATION <sup>c</sup></summary>
+<h4>Note 6: </h4>
+Perforation through the tumour into the peritoneal cavity is a well-established adverse prognostic factor in colonic3 and rectal4 cancer and should be recorded. Tumour perforation is defined as a macroscopically visible full thickness defect through the tumour, such that the bowel lumen within the segment involved by tumour is in communication with the external surface of the resection specimen or with the lumen of another organ. Such cases are regarded as pT4a in the Union for International Cancer Control (UICC)/American Joint Committee on Cancer (AJCC) 8th edition Staging Systems.5,6 The term perforation should be reserved for the biological setting and, for clarity, different descriptive terminology applied should a full thickness defect in the specimen arise intra-operatively. Such clinical information should be conveyed to the reporting pathologist to assist pathological interpretation. If an iatrogenic full thickness defect in the tumour occurs whilst the specimen is in situ within the abdominal cavity, this is best regarded as pT4a disease, given the risk of tumour seeding the peritoneal cavity. This interpretation is however offered without good evidence. If such an iatrogenic defect occurs once the specimen is outside the abdominal cavity, the defect should not influence pT classification. An explanatory note regarding interpretation should be provided in the pathology report.</p>
+<p>Peritumoural abscess cavity, for example within the mesentery, that is contained and does not demonstrate breach of the serosal surface, should not be considered perforation and is considered pT3 rather than pT4a. Perforation of the colon as a result of a more distal obstructing tumour is distinct from tumour perforation and does not indicate pT4 disease, but nevertheless should be recorded as it is associated with high mortality risk.</p>
+</details>
+</label>
+<div> <input type="radio" id="PF001" name="PF" value="Not identified"> <label for="PF001">Not identified</label> </div>
+<div> <input type="radio" id="PF002" name="PF" value="Present">
+<label for="PF002">Present</label>            
+<div class="sub2" style="padding-left: 1em;">
+                <div>
+                    <input type="radio" name="PFa" value="Through tumour (tumour perforation)" id="PFa001"/>
+                    <label for="PFa001">Through tumour (tumour perforation)</label>
+                </div>
+                <div>
+                    <input type="radio" name="PFa" value="Not involving tumour" id="PFa002"/>
+                    <label for="PFa002">Not involving tumour</label>
+                </div>
+            </div> </div> 
+<p><i><sup>c</sup> Defined as a macroscopically visible full thickness defect in
+the wall.</i></p>
+
+<label>
+<details>
+<summary>TUMOUR SITE <sup>a</sup></summary>
+<h4>Note 4: </h4>
+<p>If multiple primary tumours are present, separate datasets should be used to record tumour site and all following elements for each primary tumour. Determination of tumour site is based on clinical information provided on the pathology request form combined with specimen assessment by the pathologist. Any significant discrepancy should be discussed with the clinical team and the tumour site clearly documented by specimen photography. Recording the anatomical site of tumour allows correlation with prior endoscopic and radiological investigations, indicates whether or not a non-peritonealised margin is likely to be present and defines the presence of regional versus non-regional lymph nodes. In particular, distinction of colonic from rectal origin is of importance, given different biologies, clinical features and management. Every effort should be made, therefore, to accurately classify a tumour as colonic or rectal in origin.</p>
+<p>If a tumour straddles two sites, the site with the greatest tumour bulk should be recorded. The three taeniae coli of the sigmoid colon fuse to form the circumferential longitudinal muscle of the rectal wall, marking the rectosigmoid boundary. If distinction between the sigmoid colon and rectum is not possible by pathological assessment, for example owing to advanced tumour stage obliterating anatomical landmarks, the tumour site can be recorded based on clinical information available.
+Classification as rectosigmoid should be reserved for cases in which an accurate determination between rectum and sigmoid cannot be made by pathological assessment and clinical information regarding site is not available.</p>
+</details>
+</label>
+
+<div> <input type="radio" id="TS001" name="PF" value="Not specified">
+<label for="TS001">Not specified</label></div>
+<div> <input type="radio" id="TS002" name="TS" value="Caecum">
+<label for="TS002">Caecum</label>            
+<div> <input type="radio" id="TS003" name="TS" value="Ascending colon">
+<label for="TS003">Ascending colon</label>    
+<div> <input type="radio" id="TS004" name="TS" value="Hepatic flexure">
+<label for="TS004">Hepatic flexure</label>    
+<div> <input type="radio" id="TS005" name="TS" value="Transverse colon">
+<label for="TS005">Transverse colon</label>    
+<div> <input type="radio" id="TS006" name="TS" value="Splenic flexure">
+<label for="TS006">Splenic flexure</label>
+<div> <input type="radio" id="TS007" name="TS" value="Descending colon">
+<label for="TS007">Descending colon</label>    
+<div> <input type="radio" id="TS008" name="TS" value="Rectosigmoid">
+<label for="TS008">Rectosigmoid<sup>b</sup></label>    
+<div> <input type="radio" id="TS009" name="TS" value="Rectum">
+<label for="TS009">Rectum</label>  
+<div> <input type="radio" id="TS010" name="TS" value="Other, specify">
+<label for="TS010">Other, <i>specify</i><input name="OPtext" id="OPtext" placeholder=""></label> </div>   
+
+<p><i><sup>a</sup> If multiple primary tumours are present, separate datasets should be
+used to record this and all following elements for each primary tumour.</i></p>
+<p></p>
+<p><i><sup>b</sup> Reserved for cases in which an accurate determination between
+rectum and sigmoid cannot be made by pathological assessment
+and clinical information regarding site is not available.</i></p>
+
+
+
+<label>
+<details>
+<summary>PATHOLOGICAL STAGING (UICC TNM 8th edition)</summary>
+<h4>Note 25: </h4>
+<p>TNM staging should be assessed according to the agreed criteria of the UICC and AJCC 8th editions.5,6 The only exception is that pT in situ is not recognised for colorectal cancer in this dataset. Rare cases of colorectal neoplasia confined to invasion of the lamina propria (intramucosal invasive neoplasia or intramucosal carcinoma) are acknowledged but, given the negligible metastatic potential of such neoplasms,34 these should be classified under the same category with high grade dysplasia/high grade non invasive neoplasia.</p>
+<p>Note that in the setting of completion surgery following a diagnosis of carcinoma in a local excision specimen, an overall tumour stage should be provided based on the pathological findings within both specimens, usually taking into consideration extent of local invasion in the local excision specimen and any residual local or nodal metastatic tumour in the subsequent surgical resection specimen. Regarding synchronous primary carcinomas, whilst individual datasets should be completed for each tumour, a single overarching stage should also be provided, following the conventions of TNM and applying the ‘m’ suffix.</p>
+</details>
+</label>
+<div> <input type="radio" id="pT001" name="pT" value="TX: Primary tumour cannot be assessed"> <label for="pT001"><b>TX:</b> Primary tumour cannot be assessed</label> </div>
+<div> <input type="radio" id="pT002" name="pT" value="T0: No evidence of primary tumour"> <label for="pT002"><b>T0:</b> No evidence of primary tumour</label> </div>  
+<div> <input type="radio" id="pT003" name="pT" value="Tis: Carcinoma in situ: invasion of lamina propria"> <label for="pT003"><b>Tis:</b> Carcinoma in situ: invasion of lamina propria</label> </div> 
+<div> <input type="radio" id="pT004" name="pT" value="T1: Tumour invades submucosa"> <label for="pT004"><b>T1:</b> Tumour invades submucosa</label> </div>     
+<div> <input type="radio" id="pT005" name="pT" value="T2: Tumour invades muscularis propria"> <label for="pT005"><b>T2:</b> Tumour invades muscularis propria</label> </div>  
+<div> <input type="radio" id="pT006" name="pT" value="T3: Tumour invades subserosa or into non-peritonealized pericolic or perirectal tissues"> <label for="pT006"><b>T3:</b> Tumour invades subserosa or into non-peritonealized pericolic or perirectal tissues</label> </div>  
+<div> <input type="radio" id="pT007" name="pT" value="T4: Tumour directly invades other organs or structures and/or perforates visceral peritoneum"> <label for="pT007"><b>T4:</b> Tumour directly invades other organs or structures and/or perforates visceral peritoneum</label> </div>       
+<div class="sub2" style="padding-left: 1em;">
+                <div>
+                    <input type="radio" name="pTa" value="T4a: Tumour perforates visceral peritoneum" id="pTa001"/>
+                    <label for="pTa001"><b>T4a:</b> Tumour perforates visceral peritoneum</label>
+                </div>
+                <div>
+                    <input type="radio" name="pTa" value="T4b: Tumour directly invades other organs or structures" id="pTa002"/>
+                    <label for="pTa002"><b>T4b:</b> Tumour directly invades other organs or structures</label>
+                </div>
+            </div> </div> 
+<p> </p>
+
+
+
+
+
+
+<div><input type="Gen_Report" value="Generate Report"></div>
+</form>
+</body>
+</html>
