@@ -14,14 +14,10 @@
 
 <body>
 
-<h2 id="form-elements">Colorectal Cancer Histopathology Reporting Guide</h2>
+<h2 id="form-elements">Colorectal Cancer Histopathology Reporting Guide (ICCR)</h2>
  <form>
 <label for="labno">Lab No</label>
 <input readonly type="labno" name="labno" id="labno" placeholder="20AH12345">
-
-<label for="about">Microscopic Description</label>
-<textarea name="about" id="about" placeholder="Put your microscopic description here"></textarea>
-
 <label>
 <details>
 <summary>NEOADJUVANT THERAPY</summary>
@@ -33,7 +29,7 @@
 <div> <input type="radio" id="NAT001" name="NAT" value="Information not provided"> <label for="NAT001">Information not provided</label> </div>
 <div> <input type="radio" id="NAT002" name="NAT" value="Not administered">
 <label for="NAT002">Not administered</label> </div> 
-<div> <input type="radio" id="NAT003" name="NAT" value="Administered, describe"> <label for="NAT003">Administered, <i>describe</i><input name="NATtext" id="NATtext" placeholder=""></label> 
+<div> <input type="radio" id="NAT003" name="NAT" value="Administered, describe"> <label for="NAT003"><label for "NATtext">Administered, <i>describe</i></label><input name="NATtext" id="NATtext" placeholder=""></label> 
  </div> 
 
 <label>
@@ -53,31 +49,7 @@
 <div> <input type="radio" id="OP008" name="OP" value="Anterior resection"> <label for="OP008">Anterior resection</label> </div>  
 <div> <input type="radio" id="OP009" name="OP" value="Hartmann’s procedure"> <label for="OP009">Hartmann’s procedure</label> </div>  
 <div> <input type="radio" id="OP010" name="OP" value="Abdominoperineal resection"> <label for="OP010">Abdominoperineal resection</label> </div>     
-<div> <input type="radio" id="OP011" name="OP" value="Other, specify"> <label for="OP011">Other, <i>specify</i><input name="OPtext" id="OPtext" placeholder=""></label> </div>   
-
-<label>
-<details>
-<summary>PERFORATION <sup>c</sup></summary>
-<h4>Note 6: </h4>
-Perforation through the tumour into the peritoneal cavity is a well-established adverse prognostic factor in colonic3 and rectal4 cancer and should be recorded. Tumour perforation is defined as a macroscopically visible full thickness defect through the tumour, such that the bowel lumen within the segment involved by tumour is in communication with the external surface of the resection specimen or with the lumen of another organ. Such cases are regarded as pT4a in the Union for International Cancer Control (UICC)/American Joint Committee on Cancer (AJCC) 8th edition Staging Systems.5,6 The term perforation should be reserved for the biological setting and, for clarity, different descriptive terminology applied should a full thickness defect in the specimen arise intra-operatively. Such clinical information should be conveyed to the reporting pathologist to assist pathological interpretation. If an iatrogenic full thickness defect in the tumour occurs whilst the specimen is in situ within the abdominal cavity, this is best regarded as pT4a disease, given the risk of tumour seeding the peritoneal cavity. This interpretation is however offered without good evidence. If such an iatrogenic defect occurs once the specimen is outside the abdominal cavity, the defect should not influence pT classification. An explanatory note regarding interpretation should be provided in the pathology report.</p>
-<p>Peritumoural abscess cavity, for example within the mesentery, that is contained and does not demonstrate breach of the serosal surface, should not be considered perforation and is considered pT3 rather than pT4a. Perforation of the colon as a result of a more distal obstructing tumour is distinct from tumour perforation and does not indicate pT4 disease, but nevertheless should be recorded as it is associated with high mortality risk.</p>
-</details>
-</label>
-<div> <input type="radio" id="PF001" name="PF" value="Not identified"> <label for="PF001">Not identified</label> </div>
-<div> <input type="radio" id="PF002" name="PF" value="Present">
-<label for="PF002">Present</label>            
-<div class="sub2" style="padding-left: 1em;">
-                <div>
-                    <input type="radio" name="PFa" value="Through tumour (tumour perforation)" id="PFa001"/>
-                    <label for="PFa001">Through tumour (tumour perforation)</label>
-                </div>
-                <div>
-                    <input type="radio" name="PFa" value="Not involving tumour" id="PFa002"/>
-                    <label for="PFa002">Not involving tumour</label>
-                </div>
-            </div> </div> 
-<p><i><sup>c</sup> Defined as a macroscopically visible full thickness defect in
-the wall.</i></p>
+<div> <input type="radio" id="OP011" name="OP" value="Other, specify"> <label for="OP011"><label for ="OPtext">Other, <i>specify</i></label><input name="OPtext" id="OPtext" placeholder=""></label> </div>   
 
 <label>
 <details>
@@ -89,7 +61,7 @@ Classification as rectosigmoid should be reserved for cases in which an accurate
 </details>
 </label>
 
-<div> <input type="radio" id="TS001" name="PF" value="Not specified">
+<div> <input type="radio" id="TS001" name="TS" value="Not specified">
 <label for="TS001">Not specified</label></div>
 <div> <input type="radio" id="TS002" name="TS" value="Caecum">
 <label for="TS002">Caecum</label>            
@@ -108,7 +80,7 @@ Classification as rectosigmoid should be reserved for cases in which an accurate
 <div> <input type="radio" id="TS009" name="TS" value="Rectum">
 <label for="TS009">Rectum</label>  
 <div> <input type="radio" id="TS010" name="TS" value="Other, specify">
-<label for="TS010">Other, <i>specify</i><input name="OPtext" id="OPtext" placeholder=""></label> </div>   
+<label for="TS010"><label for "TStext">Other, <i>specify</i></label><input name="TStext" id="TStext" placeholder=""></label> </div>   
 
 <p><i><sup>a</sup> If multiple primary tumours are present, separate datasets should be
 used to record this and all following elements for each primary tumour.</i></p>
@@ -117,7 +89,104 @@ used to record this and all following elements for each primary tumour.</i></p>
 rectum and sigmoid cannot be made by pathological assessment
 and clinical information regarding site is not available.</i></p>
 
+<label>
+<details>
+<summary>TUMOUR DIMENSIONS</summary>
+<h4>Note 5: </h4>
+<p>No prognostic significance has been attached to tumour size for colorectal cancer and size does not directly influence tumour staging. Recording of size, based on a combination of macroscopic and microscopic assessment, allows correlation with pre-operative imaging, endoscopic and surgical assessments. Assessment of tumour dimensions should, if possible, exclude any inflammatory component or pre-invasive lesion, a separate measurement of which may be provided.</p>
+</details>
+</label>
+<div> <input type="radio" id="TD001" name="TD" value="TX: Primary tumour cannot be assessed"> <label for="TD001">Cannot be assessed</label> </div>
+<div> <input type="radio" id="TD002" name="TD" value="Other, specify">
+<label for="TD002"><label for = "TDtext">Maximum tumour dimension (mm)</label><input name="TDtext" id="TDtext" placeholder="mm">
+<label for = "TDtext2">Additional tumour dimension 1 (mm)</label><input name="TDtext2" id="TDtext2" placeholder="mm">
+<label for = "TDtext3">Additional tumour dimension 2 (mm)</label><input name="TDtext3" id="TDtext3" placeholder="mm">
+</label> </div> 
 
+<label>
+<details>
+<summary>PERFORATION <sup>c</sup></summary>
+<h4>Note 6: </h4>
+Perforation through the tumour into the peritoneal cavity is a well-established adverse prognostic factor in colonic3 and rectal4 cancer and should be recorded. Tumour perforation is defined as a macroscopically visible full thickness defect through the tumour, such that the bowel lumen within the segment involved by tumour is in communication with the external surface of the resection specimen or with the lumen of another organ. Such cases are regarded as pT4a in the Union for International Cancer Control (UICC)/American Joint Committee on Cancer (AJCC) 8th edition Staging Systems.5,6 The term perforation should be reserved for the biological setting and, for clarity, different descriptive terminology applied should a full thickness defect in the specimen arise intra-operatively. Such clinical information should be conveyed to the reporting pathologist to assist pathological interpretation. If an iatrogenic full thickness defect in the tumour occurs whilst the specimen is in situ within the abdominal cavity, this is best regarded as pT4a disease, given the risk of tumour seeding the peritoneal cavity. This interpretation is however offered without good evidence. If such an iatrogenic defect occurs once the specimen is outside the abdominal cavity, the defect should not influence pT classification. An explanatory note regarding interpretation should be provided in the pathology report.</p>
+<p>Peritumoural abscess cavity, for example within the mesentery, that is contained and does not demonstrate breach of the serosal surface, should not be considered perforation and is considered pT3 rather than pT4a. Perforation of the colon as a result of a more distal obstructing tumour is distinct from tumour perforation and does not indicate pT4 disease, but nevertheless should be recorded as it is associated with high mortality risk.</p>
+</details>
+</label>
+<div> <input type="radio" id="PF001" name="PF" value="Not identified"> <label for="PF001">Not identified</label> </div>
+<div> <input type="radio" id="PF002" name="PF" value="Present">
+<label for="PF002">Present</label>            
+<div style="padding-left: 1em;">
+                <div>
+                    <input type="radio" name="PF" value="Through tumour (tumour perforation)" id="PFa001"/>
+                    <label for="PFa001">Through tumour (tumour perforation)</label>
+                </div>
+                <div>
+                    <input type="radio" name="PF" value="Not involving tumour" id="PFa002"/>
+                    <label for="PFa002">Not involving tumour</label>
+                </div>
+            </div> </div> 
+<p><i><sup>c</sup> Defined as a macroscopically visible full thickness defect in
+the wall.</i></p>
+
+<label>
+<details>
+<summary>RELATION OF TUMOUR TO ANTERIOR PERITONEAL REFLECTION</summary>
+<h4>Note 7: </h4>
+<p>For rectal tumours only, the relationship of the tumour to the anterior peritoneal reflection must be recorded, as this predicts the risk of local recurrence in addition to peritoneal recurrence (Figure 1).7 The anterior aspect of the rectum is covered by peritoneum down to level of the peritoneal reflection. Posteriorly, the non-peritonealised margin extends upwards as a triangular shaped bare area containing the rectal arteries. Superiorly this area is continuous with the sigmoid mesocolon.</p>
+<p><img src="PR.jpg" width="80%"></p>
+<p><u><b>Figure 1: Site of tumour in relation to the anterior level of the peritoneal reflection.</b></u> Reproduced with permission from Royal College of Pathologists of Australasia (2016). <i>Colorectal cancer structured reporting protocol, 3rd Edition. RCPA, Australia.8</i></p>
+</details>
+<p><i>(Applicable to any specimen containing a rectal cancer e.g., anterior resection, abdominoperineal resection, proctocolectomy)</i></p>
+</label>
+<div> <input type="radio" id="PR001" name="PR" value="Not applicable"> <label for="PR001">Not applicable</label> </div>
+<div> <input type="radio" id="PR002" name="PR" value="Entirely above">
+<label for="PR002">Entirely above</label></div> 
+<div> <input type="radio" id="PR003" name="PR" value="Entirely below">
+<label for="PR003">Entirely below</label></div> 
+<div> <input type="radio" id="PR004" name="PR" value="Astride">
+<label for="PR004">Astride</label></div> 
+
+<label>
+<details>
+<summary>PLANE OF MESORECTAL EXCISION</summary>
+<h4>Note 8: </h4>
+<p>
+The quality of surgical technique has been shown by prospective randomised controlled trials to predict outcome following surgical treatment for rectal cancer. Total mesorectal excision (TME) surgery improves local recurrence rates and the corresponding survival by up to 20%.9,10 Macroscopic evaluation of the completeness of the mesorectum, by objective assessment of the surgical plane of excision, predicts margin involvement, local recurrence and survival.7,11 Excision in the mesorectal plane (complete TME) has the best outcome while excision extending onto the muscularis propria (incomplete TME) has the worst.
+5
+Assessment requires examination of the intact specimen and overall assessment is based on the worst area, as described below:
+
+<h4>Mesorectal fascia (complete)</h4>
+<ul>
+<li>Intact bulky mesorectum with a smooth surface</li>
+<li>Only minor irregularities of the mesorectal surface</li>
+<li>No surface defects greater than 5 millimetres (mm) in depth</li>
+<li>No coning towards the distal margin of the specimen</li>
+</ul>
+
+<h4>Intramesorectal (near complete)</h4>
+<ul>
+<li>Moderate bulk to the mesorectum</li>
+<li>Irregularity of the mesorectal surface with defects greater than 5 mm, but none extending to the muscularis propria</li>
+<li>Moderate coning may be evident distally</li>
+<li>No areas of visibility of the muscularis propria except at the insertion site of the levator ani muscles</li>
+</ul>
+
+<h4>Muscularis propria (incomplete)</h4>
+<ul>
+<li>Little bulk to the mesorectum</li>
+<li>Defects in the mesorectum down to the muscularis propria</li>
+<li>After transverse sectioning, the circumferential margin appears very irregular and is formed by muscularis propria in areas.</li>
+</ul>
+</p>
+</details>
+<p><i>(Applicable to any specimen containing a rectal cancer e.g., anterior resection, abdominoperineal resection, proctocolectomy)</i></p>
+</label>
+<div> <input type="radio" id="ME001" name="ME" value="Not applicable"> <label for="PR001">Not applicable</label> </div>
+<div> <input type="radio" id="ME002" name="ME" value="Mesorectal fascia (complete)">
+<label for="ME002">Mesorectal fascia (complete)</label></div> 
+<div> <input type="radio" id="ME003" name="ME" value="Intramesorectal (near complete)">
+<label for="ME003">Intramesorectal (near complete)</label></div> 
+<div> <input type="radio" id="ME004" name="ME" value="Muscularis propria (incomplete)">
+<label for="ME004">Muscularis propria (incomplete)</label></div>
 
 <label>
 <details>
@@ -134,13 +203,13 @@ and clinical information regarding site is not available.</i></p>
 <div> <input type="radio" id="pT005" name="pT" value="T2: Tumour invades muscularis propria"> <label for="pT005"><b>T2:</b> Tumour invades muscularis propria</label> </div>  
 <div> <input type="radio" id="pT006" name="pT" value="T3: Tumour invades subserosa or into non-peritonealized pericolic or perirectal tissues"> <label for="pT006"><b>T3:</b> Tumour invades subserosa or into non-peritonealized pericolic or perirectal tissues</label> </div>  
 <div> <input type="radio" id="pT007" name="pT" value="T4: Tumour directly invades other organs or structures and/or perforates visceral peritoneum"> <label for="pT007"><b>T4:</b> Tumour directly invades other organs or structures and/or perforates visceral peritoneum</label> </div>       
-<div class="sub2" style="padding-left: 1em;">
+<div style="padding-left: 1em;">
                 <div>
-                    <input type="radio" name="pTa" value="T4a: Tumour perforates visceral peritoneum" id="pTa001"/>
+                    <input type="radio" name="pT" value="T4a: Tumour perforates visceral peritoneum" id="pTa001"/>
                     <label for="pTa001"><b>T4a:</b> Tumour perforates visceral peritoneum</label>
                 </div>
                 <div>
-                    <input type="radio" name="pTa" value="T4b: Tumour directly invades other organs or structures" id="pTa002"/>
+                    <input type="radio" name="pT" value="T4b: Tumour directly invades other organs or structures" id="pTa002"/>
                     <label for="pTa002"><b>T4b:</b> Tumour directly invades other organs or structures</label>
                 </div>
             </div> </div> 
@@ -152,6 +221,10 @@ and clinical information regarding site is not available.</i></p>
 
 
 <div><input type="Gen_Report" value="Generate Report"></div>
+
+<label for="about"><h3>REPORT CONTENT (> Copy and Paste to LIS window)</h3></label>
+<textarea readonly name="about" id="about" placeholder=""></textarea>
+
 </form>
 </body>
 </html>
